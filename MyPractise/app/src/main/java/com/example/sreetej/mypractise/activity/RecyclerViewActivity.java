@@ -1,5 +1,6 @@
 package com.example.sreetej.mypractise.activity;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -9,6 +10,7 @@ import android.widget.Toast;
 
 import com.example.sreetej.mypractise.R;
 import com.example.sreetej.mypractise.adapter.CustomRecyclerViewAdapter;
+import com.example.sreetej.mypractise.dataBinding.DataBindingExampleActivity;
 import com.example.sreetej.mypractise.util.RecyclerItemClickListener;
 
 public class RecyclerViewActivity extends AppCompatActivity implements RecyclerItemClickListener.OnItemClickListener {
@@ -24,7 +26,7 @@ public class RecyclerViewActivity extends AppCompatActivity implements RecyclerI
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler_view);
 
-        dataSet = new String[]{"A", "B"};
+        dataSet = new String[]{"Data Binding", "B"};
 
 
         mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
@@ -46,6 +48,18 @@ public class RecyclerViewActivity extends AppCompatActivity implements RecyclerI
     @Override
     public void onItemClick(View childView, int position) {
         Toast.makeText(RecyclerViewActivity.this, "position:" + dataSet[position], Toast.LENGTH_LONG).show();
+        switch (position) {
+            case 0 :
+                dataBinding();
+                break;
+
+            default:
+                Toast.makeText(RecyclerViewActivity.this,"Select right choice", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void dataBinding() {
+        startActivity(new Intent(RecyclerViewActivity.this, DataBindingExampleActivity.class));
     }
 
     @Override
