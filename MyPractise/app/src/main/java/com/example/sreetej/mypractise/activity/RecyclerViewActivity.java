@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import com.example.sreetej.mypractise.R;
 import com.example.sreetej.mypractise.adapter.CustomRecyclerViewAdapter;
-import com.example.sreetej.mypractise.dataBinding.DataBindingExampleActivity;
+import com.example.sreetej.mypractise.dataBindingSample.DataBindingExampleActivity;
 import com.example.sreetej.mypractise.util.RecyclerItemClickListener;
 
 public class RecyclerViewActivity extends AppCompatActivity implements RecyclerItemClickListener.OnItemClickListener {

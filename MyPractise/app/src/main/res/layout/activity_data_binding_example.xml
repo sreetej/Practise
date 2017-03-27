@@ -6,11 +6,11 @@
 
         <variable
             name="user"
-            type="com.example.sreetej.mypractise.dataBinding.DataBindUserModel" />
+            type="com.example.sreetej.mypractise.dataBindingSample.DataBindUserModel" />
 
         <variable
             name="activity"
-            type="com.example.sreetej.mypractise.dataBinding.DataBindingExampleActivity" />
+            type="com.example.sreetej.mypractise.dataBindingSample.DataBindingExampleActivity" />
     </data>
 
     <RelativeLayout

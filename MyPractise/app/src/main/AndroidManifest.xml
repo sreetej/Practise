@@ -24,7 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".dataBinding.DataBindingExampleActivity"></activity>
+        <activity android:name=".dataBindingSample.DataBindingExampleActivity"></activity>
     </application>
 
 </manifest>

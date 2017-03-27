@@ -1,4 +1,4 @@
-package com.example.sreetej.mypractise.dataBinding;
+package com.example.sreetej.mypractise.dataBindingSample;
 
 
 import android.databinding.DataBindingUtil;
