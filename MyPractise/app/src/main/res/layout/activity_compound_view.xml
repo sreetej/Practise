@@ -29,6 +29,7 @@
         android:background="?android:selectableItemBackground"
         android:onClick="onClicked"
         custom:titleText="Foreground color"
+        android:layout_margin="1dp"
         custom:valueColor="@android:color/holo_orange_dark">
 
 
