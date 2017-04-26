@@ -12,6 +12,7 @@ import com.example.sreetej.mypractise.R;
 import com.example.sreetej.mypractise.adapter.CustomRecyclerViewAdapter;
 import com.example.sreetej.mypractise.compoundViewSample.CompoundViewActivity;
 import com.example.sreetej.mypractise.dataBindingSample.DataBindingExampleActivity;
+import com.example.sreetej.mypractise.runtimePermissionSample.RuntimePermissionSampleActivity;
 import com.example.sreetej.mypractise.util.RecyclerItemClickListener;
 
 public class RecyclerViewActivity extends AppCompatActivity implements RecyclerItemClickListener.OnItemClickListener {
@@ -27,7 +28,7 @@ public class RecyclerViewActivity extends AppCompatActivity implements RecyclerI
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler_view);
 
-        dataSet = new String[]{"Data Binding", "Compound View"};
+        dataSet = new String[]{"Data Binding", "Compound View", "Runtime Permission Sample"};
 
 
         mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
@@ -56,6 +57,10 @@ public class RecyclerViewActivity extends AppCompatActivity implements RecyclerI
 
             case 1 :
                 startActivity(new Intent(RecyclerViewActivity.this, CompoundViewActivity.class));
+                break;
+
+            case 2 :
+                startActivity(new Intent(RecyclerViewActivity.this, RuntimePermissionSampleActivity.class));
                 break;
 
             default:
