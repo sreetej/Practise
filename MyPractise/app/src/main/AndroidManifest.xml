@@ -19,7 +19,7 @@
         </activity>
         <activity android:name=".dataBindingSample.DataBindingExampleActivity" />
         <activity android:name=".compoundViewSample.CompoundViewActivity" />
-        <activity android:name=".runtimePermissionSample.RuntimePermissionSampleActivity"></activity>
+        <activity android:name=".runtimePermissionSample.RuntimePermissionSampleActivity"/>
     </application>
 
 </manifest>
