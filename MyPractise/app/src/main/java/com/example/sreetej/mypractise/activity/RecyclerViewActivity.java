@@ -12,6 +12,7 @@ import com.example.sreetej.mypractise.R;
 import com.example.sreetej.mypractise.adapter.CustomRecyclerViewAdapter;
 import com.example.sreetej.mypractise.compoundViewSample.CompoundViewActivity;
 import com.example.sreetej.mypractise.dataBindingSample.DataBindingExampleActivity;
+import com.example.sreetej.mypractise.dialogsInFragmentExample.DiagInFragActicity;
 import com.example.sreetej.mypractise.runtimePermissionSample.RuntimePermissionSampleActivity;
 import com.example.sreetej.mypractise.util.RecyclerItemClickListener;
 
@@ -28,7 +29,7 @@ public class RecyclerViewActivity extends AppCompatActivity implements RecyclerI
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler_view);
 
-        dataSet = new String[]{"Data Binding", "Compound View", "Runtime Permission Sample"};
+        dataSet = new String[]{"Data Binding", "Compound View", "Runtime Permission Sample", "Dialogs with Fragments"};
 
 
         mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
@@ -63,6 +64,10 @@ public class RecyclerViewActivity extends AppCompatActivity implements RecyclerI
                 startActivity(new Intent(RecyclerViewActivity.this, RuntimePermissionSampleActivity.class));
                 break;
 
+            case 3 :
+                startActivity(new Intent(RecyclerViewActivity.this, DiagInFragActicity.class));
+                break;
+
             default:
                 Toast.makeText(RecyclerViewActivity.this,"Select right choice", Toast.LENGTH_SHORT).show();
         }
@@ -74,7 +79,7 @@ public class RecyclerViewActivity extends AppCompatActivity implements RecyclerI
 
     @Override
     public void onItemLongPress(View childView, int position) {
-        Toast.makeText(RecyclerViewActivity.this, "long press:" + position, Toast.LENGTH_LONG).show();
+        Toast.makeText(RecyclerViewActivity.this, "" + dataSet[position], Toast.LENGTH_LONG).show();
 
     }
 }

@@ -35,15 +35,15 @@ public class RuntimePermissionSampleActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(RuntimePermissionSampleActivity.this,"onClick listener",Toast.LENGTH_LONG).show();
+//                Toast.makeText(RuntimePermissionSampleActivity.this,"onClick listener",Toast.LENGTH_LONG).show();
 
                 if (ActivityCompat.checkSelfPermission(RuntimePermissionSampleActivity.this, Manifest.permission.CAMERA)
                         != PackageManager.PERMISSION_GRANTED) {
-                    Toast.makeText(RuntimePermissionSampleActivity.this,"onClick if",Toast.LENGTH_LONG).show();
+//                    Toast.makeText(RuntimePermissionSampleActivity.this,"onClick if",Toast.LENGTH_LONG).show();
                     requestCameraPermission();
 
                 } else {
-                    Toast.makeText(RuntimePermissionSampleActivity.this,"onClick else",Toast.LENGTH_LONG).show();
+//                    Toast.makeText(RuntimePermissionSampleActivity.this,"onClick else",Toast.LENGTH_LONG).show();
                     Log.i("RuntimePermissionSample",
                             "CAMERA permission has already been granted. Displaying camera preview.");
 
@@ -55,7 +55,7 @@ public class RuntimePermissionSampleActivity extends AppCompatActivity {
 
     private void requestCameraPermission() {
 
-        Toast.makeText(RuntimePermissionSampleActivity.this,"request Camera",Toast.LENGTH_LONG).show();
+//        Toast.makeText(RuntimePermissionSampleActivity.this,"request Camera",Toast.LENGTH_LONG).show();
 
         Log.i("RuntimePermissionSample", "CAMERA permission has NOT been granted. Requesting permission.");
         // BEGIN_INCLUDE(camera_permission_request)
@@ -63,7 +63,7 @@ public class RuntimePermissionSampleActivity extends AppCompatActivity {
         if (ActivityCompat.shouldShowRequestPermissionRationale(RuntimePermissionSampleActivity.this, Manifest.permission.CAMERA)) {
             //Show Information about why you need the permission
 
-            Toast.makeText(RuntimePermissionSampleActivity.this,"request if",Toast.LENGTH_LONG).show();
+//            Toast.makeText(RuntimePermissionSampleActivity.this,"request if",Toast.LENGTH_LONG).show();
 
             AlertDialog.Builder builder = new AlertDialog.Builder(RuntimePermissionSampleActivity.this);
             builder.setTitle("Need Storage Permission");
@@ -85,7 +85,7 @@ public class RuntimePermissionSampleActivity extends AppCompatActivity {
 
         } else {
             //just request the permission
-            Toast.makeText(RuntimePermissionSampleActivity.this,"request else",Toast.LENGTH_LONG).show();
+//            Toast.makeText(RuntimePermissionSampleActivity.this,"request else",Toast.LENGTH_LONG).show();
             ActivityCompat.requestPermissions(RuntimePermissionSampleActivity.this, new String[]{Manifest.permission.CAMERA}, 0);
         }
 
