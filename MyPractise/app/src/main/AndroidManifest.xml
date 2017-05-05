@@ -3,7 +3,7 @@
     package="com.example.sreetej.mypractise">
 
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -21,7 +21,8 @@
         <activity android:name=".dataBindingSample.DataBindingExampleActivity" />
         <activity android:name=".compoundViewSample.CompoundViewActivity" />
         <activity android:name=".runtimePermissionSample.RuntimePermissionSampleActivity" />
-        <activity android:name=".dialogsInFragmentExample.DiagInFragActicity"></activity>
+        <activity android:name=".dialogsInFragmentExample.DiagInFragActicity" />
+        <activity android:name=".retrofitSample.RectrofitSampleActivity"></activity>
     </application>
 
 </manifest>

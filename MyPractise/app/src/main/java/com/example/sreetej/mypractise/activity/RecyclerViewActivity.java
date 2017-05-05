@@ -13,6 +13,7 @@ import com.example.sreetej.mypractise.adapter.CustomRecyclerViewAdapter;
 import com.example.sreetej.mypractise.compoundViewSample.CompoundViewActivity;
 import com.example.sreetej.mypractise.dataBindingSample.DataBindingExampleActivity;
 import com.example.sreetej.mypractise.dialogsInFragmentExample.DiagInFragActicity;
+import com.example.sreetej.mypractise.retrofitSample.RectrofitSampleActivity;
 import com.example.sreetej.mypractise.runtimePermissionSample.RuntimePermissionSampleActivity;
 import com.example.sreetej.mypractise.util.RecyclerItemClickListener;
 
@@ -29,7 +30,7 @@ public class RecyclerViewActivity extends AppCompatActivity implements RecyclerI
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler_view);
 
-        dataSet = new String[]{"Data Binding", "Compound View", "Runtime Permission Sample", "Dialogs with Fragments"};
+        dataSet = new String[]{"Data Binding", "Compound View", "Runtime Permission Sample", "Dialogs with Fragments", "Rectofit Sample"};
 
 
         mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
@@ -66,6 +67,9 @@ public class RecyclerViewActivity extends AppCompatActivity implements RecyclerI
 
             case 3 :
                 startActivity(new Intent(RecyclerViewActivity.this, DiagInFragActicity.class));
+                break;
+            case 4 :
+                startActivity(new Intent(RecyclerViewActivity.this, RectrofitSampleActivity.class));
                 break;
 
             default:
