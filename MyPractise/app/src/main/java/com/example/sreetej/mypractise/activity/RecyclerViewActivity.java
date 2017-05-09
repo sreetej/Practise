@@ -14,6 +14,7 @@ import com.example.sreetej.mypractise.compoundViewSample.CompoundViewActivity;
 import com.example.sreetej.mypractise.dataBindingSample.DataBindingExampleActivity;
 import com.example.sreetej.mypractise.dialogsInFragmentExample.DiagInFragActicity;
 import com.example.sreetej.mypractise.retrofitSample.RectrofitSampleActivity;
+import com.example.sreetej.mypractise.retrofitSampleStackOverFlowEg.RetrofitSOflowSampleActivity;
 import com.example.sreetej.mypractise.runtimePermissionSample.RuntimePermissionSampleActivity;
 import com.example.sreetej.mypractise.util.RecyclerItemClickListener;
 
@@ -30,7 +31,12 @@ public class RecyclerViewActivity extends AppCompatActivity implements RecyclerI
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler_view);
 
-        dataSet = new String[]{"Data Binding", "Compound View", "Runtime Permission Sample", "Dialogs with Fragments", "Rectofit Sample"};
+        dataSet = new String[]{"Data Binding",
+                "Compound View",
+                "Runtime Permission Sample",
+                "Dialogs with Fragments",
+                "Rectofit Sample",
+                "Rectofit Get Sample (SOF)"};
 
 
         mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
@@ -70,6 +76,10 @@ public class RecyclerViewActivity extends AppCompatActivity implements RecyclerI
                 break;
             case 4 :
                 startActivity(new Intent(RecyclerViewActivity.this, RectrofitSampleActivity.class));
+                break;
+
+            case 5 :
+                startActivity(new Intent(RecyclerViewActivity.this, RetrofitSOflowSampleActivity.class));
                 break;
 
             default:
