@@ -13,6 +13,7 @@ import com.example.sreetej.mypractise.adapter.CustomRecyclerViewAdapter;
 import com.example.sreetej.mypractise.compoundViewSample.CompoundViewActivity;
 import com.example.sreetej.mypractise.dataBindingSample.DataBindingExampleActivity;
 import com.example.sreetej.mypractise.dialogsInFragmentExample.DiagInFragActicity;
+import com.example.sreetej.mypractise.loaderSample.LoadContactsUsingLoaderActivity;
 import com.example.sreetej.mypractise.retrofitSample.RectrofitSampleActivity;
 import com.example.sreetej.mypractise.retrofitSampleStackOverFlowEg.RetrofitSOflowSampleActivity;
 import com.example.sreetej.mypractise.runtimePermissionSample.RuntimePermissionSampleActivity;
@@ -36,7 +37,8 @@ public class RecyclerViewActivity extends AppCompatActivity implements RecyclerI
                 "Runtime Permission Sample",
                 "Dialogs with Fragments",
                 "Rectofit Sample",
-                "Rectofit Get Sample (SOF)"};
+                "Rectofit Get Sample (SOF)",
+                "Load Contacts using loader"};
 
 
         mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
@@ -80,6 +82,10 @@ public class RecyclerViewActivity extends AppCompatActivity implements RecyclerI
 
             case 5 :
                 startActivity(new Intent(RecyclerViewActivity.this, RetrofitSOflowSampleActivity.class));
+                break;
+
+            case 6 :
+                startActivity(new Intent(RecyclerViewActivity.this, LoadContactsUsingLoaderActivity.class));
                 break;
 
             default:

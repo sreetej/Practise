@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
 
     <application
         android:allowBackup="true"
@@ -23,11 +25,16 @@
         <activity android:name=".runtimePermissionSample.RuntimePermissionSampleActivity" />
         <activity android:name=".dialogsInFragmentExample.DiagInFragActicity" />
         <activity android:name=".retrofitSample.RectrofitSampleActivity" />
-        <activity android:name=".retrofitSampleStackOverFlowEg.RetrofitSOflowSampleActivity"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
-     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <activity android:name=".retrofitSampleStackOverFlowEg.RetrofitSOflowSampleActivity" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".loaderSample.LoadContactsUsingLoaderActivity"></activity>
     </application>
 
 </manifest>
