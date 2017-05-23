@@ -38,30 +38,11 @@ public class CursorLoaderListFragment extends ListFragment implements SearchView
     // If non-null, this is the current filter the user has provided.
     String mCurFilter;
 
-
-//    @Override
-//    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-//                             Bundle savedInstanceState) {
-//
-//        View view = inflater.inflate(R.layout.fragment_cursor_loader_list, container, false);
-//        return view;
-//    }
-
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        if (ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.READ_CONTACTS) != PackageManager.PERMISSION_GRANTED) {
-//            requestContatsReadPermession();
-            ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.READ_CONTACTS}, 0);
-        } else {
-            continueNext();
-        }
 
-
-    }
-
-    private void continueNext() {
         // Give some text to display if there is no data.  In a real
         // application this would come from a resource.
         setEmptyText("No phone numbers");
@@ -79,7 +60,10 @@ public class CursorLoaderListFragment extends ListFragment implements SearchView
         // Prepare the loader.  Either re-connect with an existing one,
         // or start a new one.
         getLoaderManager().initLoader(0, null, this);
+
+
     }
+
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
@@ -160,57 +144,5 @@ public class CursorLoaderListFragment extends ListFragment implements SearchView
         mAdapter.swapCursor(null);
     }
 
-    private void requestContatsReadPermession() {
 
-//        Toast.makeText(RuntimePermissionSampleActivity.this,"request Camera",Toast.LENGTH_LONG).show();
-
-        if (ActivityCompat.shouldShowRequestPermissionRationale(getActivity(), Manifest.permission.READ_CONTACTS)) {
-            //Show Information about why you need the permission
-
-//            Toast.makeText(RuntimePermissionSampleActivity.this,"request if",Toast.LENGTH_LONG).show();
-
-            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-            builder.setTitle("Need Permission");
-            builder.setMessage("This app needs permission to read Contants.");
-            builder.setPositiveButton("Grant", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    dialog.cancel();
-                    ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.READ_CONTACTS}, 0);
-
-                }
-            });
-            builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    dialog.cancel();
-
-                }
-            });
-            builder.show();
-
-
-        } else {
-            //just request the permission
-//            Toast.makeText(RuntimePermissionSampleActivity.this,"request else",Toast.LENGTH_LONG).show();
-            ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.READ_CONTACTS}, 0);
-        }
-
-
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-
-        Toast.makeText(getActivity(),"in callback", Toast.LENGTH_SHORT).show();
-        if (grantResults.length > 0
-                && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-
-           continueNext();
-
-        } else {
-
-            getActivity().finish();
-        }
-    }
 }
