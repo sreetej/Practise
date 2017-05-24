@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{16BCB364-71FF-479B-9AAF-2010C40039CF}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PhonewordXamarin Status">
+    <Files>
+      <File FileName="PhonewordXamarin Status" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.PhonewordXamarin.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F78A72FA-2035-44EB-BA35-8C7CE56A8197" />
+</Properties>
