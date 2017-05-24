@@ -1,5 +1,7 @@
 ﻿using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
+[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace PhonewordXamarin
 {
 	public partial class App : Application
@@ -8,7 +10,7 @@ namespace PhonewordXamarin
 		{
 			InitializeComponent();
 
-			MainPage = new PhonewordXamarinPage();
+			MainPage = new MainPage();
 		}
 
 		protected override void OnStart()

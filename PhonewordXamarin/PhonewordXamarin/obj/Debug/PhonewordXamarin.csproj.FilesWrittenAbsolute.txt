@@ -1,0 +1,14 @@
+/Users/sreetej/Desktop/SreeTej/Practise/PhonewordXamarin/PhonewordXamarin/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile259.AssemblyAttribute.cs
+/Users/sreetej/Desktop/SreeTej/Practise/PhonewordXamarin/PhonewordXamarin/obj/Debug/PhonewordXamarin.App.xaml
+/Users/sreetej/Desktop/SreeTej/Practise/PhonewordXamarin/PhonewordXamarin/obj/Debug/PhonewordXamarin.PhonewordXamarinPage.xaml
+/Users/sreetej/Desktop/SreeTej/Practise/PhonewordXamarin/PhonewordXamarin/obj/Debug/PhonewordXamarin.MainPage.xaml
+/Users/sreetej/Desktop/SreeTej/Practise/PhonewordXamarin/PhonewordXamarin/obj/Debug/PhonewordXamarin.App.xaml.g.cs
+/Users/sreetej/Desktop/SreeTej/Practise/PhonewordXamarin/PhonewordXamarin/obj/Debug/PhonewordXamarin.PhonewordXamarinPage.xaml.g.cs
+/Users/sreetej/Desktop/SreeTej/Practise/PhonewordXamarin/PhonewordXamarin/obj/Debug/PhonewordXamarin.MainPage.xaml.g.cs
+/Users/sreetej/Desktop/SreeTej/Practise/PhonewordXamarin/PhonewordXamarin/bin/Debug/Xamarin.Forms.Core.dll
+/Users/sreetej/Desktop/SreeTej/Practise/PhonewordXamarin/PhonewordXamarin/bin/Debug/Xamarin.Forms.Platform.dll
+/Users/sreetej/Desktop/SreeTej/Practise/PhonewordXamarin/PhonewordXamarin/bin/Debug/Xamarin.Forms.Xaml.dll
+/Users/sreetej/Desktop/SreeTej/Practise/PhonewordXamarin/PhonewordXamarin/bin/Debug/PhonewordXamarin.dll.mdb
+/Users/sreetej/Desktop/SreeTej/Practise/PhonewordXamarin/PhonewordXamarin/bin/Debug/PhonewordXamarin.dll
+/Users/sreetej/Desktop/SreeTej/Practise/PhonewordXamarin/PhonewordXamarin/obj/Debug/PhonewordXamarin.dll
+/Users/sreetej/Desktop/SreeTej/Practise/PhonewordXamarin/PhonewordXamarin/obj/Debug/PhonewordXamarin.dll.mdb
