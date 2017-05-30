@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     CarouselView carouselView;
 
-    int[] sampleImages = {R.drawable.image1, R.drawable.image2, R.drawable.image3, R.drawable.image4, R.drawable.image5};
+    int[] sampleImages = {R.drawable.image1, R.drawable.image2, R.drawable.image3, R.drawable.image4};
 
 
     @Override
