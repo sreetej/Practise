@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CashKaroSample</string>
+
+    <string name="facebook_app_id">153414025199267</string>
+    <string name="fb_login_protocol_scheme">fb153414025199267</string>
+
+</resources>
