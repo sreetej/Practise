@@ -28,6 +28,8 @@ import android.widget.Toast;
 
 import com.example.sreetej.cashkarosample.fragments.ChildFragment1;
 import com.example.sreetej.cashkarosample.fragments.MainFragment;
+import com.facebook.FacebookSdk;
+import com.facebook.login.LoginManager;
 import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ImageClickListener;
 import com.synnapps.carouselview.ImageListener;
@@ -48,7 +50,6 @@ public class MainActivity extends AppCompatActivity implements MainFragment.Main
         initNavigationDrawer();
 
         fragment = new MainFragment();
-
         setFragment(fragment);
 
     }
@@ -85,6 +86,8 @@ public class MainActivity extends AppCompatActivity implements MainFragment.Main
                         drawerLayout.closeDrawers();
                         break;
                     case R.id.logout:
+                        FacebookSdk.sdkInitialize(getApplicationContext());
+                        LoginManager.getInstance().logOut();
                         finish();
 
                 }

@@ -1,14 +1,10 @@
 <resources>
-    <string name="app_name">CashKaroSample</string>
+    <string name="app_name">CashKaro</string>
 
     <string name="facebook_app_id">153414025199267</string>
     <string name="fb_login_protocol_scheme">fb153414025199267</string>
 
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
-
-
-
-
 
 </resources>
