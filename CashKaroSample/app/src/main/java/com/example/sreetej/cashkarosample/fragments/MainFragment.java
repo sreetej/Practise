@@ -1,7 +1,6 @@
 package com.example.sreetej.cashkarosample.fragments;
 
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -10,9 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Toast;
 
-import com.example.sreetej.cashkarosample.MainActivity;
 import com.example.sreetej.cashkarosample.R;
 import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ImageClickListener;

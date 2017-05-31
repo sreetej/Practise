@@ -5,8 +5,11 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.design.widget.NavigationView;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -14,25 +17,17 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.app.NotificationCompat;
 import android.support.v7.widget.Toolbar;
-import android.support.design.widget.NavigationView;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 
 import com.example.sreetej.cashkarosample.fragments.ChildFragment1;
 import com.example.sreetej.cashkarosample.fragments.MainFragment;
 import com.facebook.FacebookSdk;
 import com.facebook.login.LoginManager;
-import com.synnapps.carouselview.CarouselView;
-import com.synnapps.carouselview.ImageClickListener;
-import com.synnapps.carouselview.ImageListener;
 
 public class MainActivity extends AppCompatActivity implements MainFragment.MainFragmentInterface, ChildFragment1.NotificationInterface{
 
@@ -50,7 +45,11 @@ public class MainActivity extends AppCompatActivity implements MainFragment.Main
         initNavigationDrawer();
 
         fragment = new MainFragment();
-        setFragment(fragment);
+        FragmentManager fragmentTransaction = getSupportFragmentManager();
+        FragmentTransaction fragmentManager = fragmentTransaction.beginTransaction();
+        fragmentManager.add(R.id.fragment_container,fragment);
+        fragmentManager.commit();
+//        setFragment(fragment);
 
     }
 
@@ -86,8 +85,16 @@ public class MainActivity extends AppCompatActivity implements MainFragment.Main
                         drawerLayout.closeDrawers();
                         break;
                     case R.id.logout:
+
+                        SharedPreferences sharedpreferences = getSharedPreferences(LoginActivity.MyPREFERENCES, Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor = sharedpreferences.edit();
+                        editor.clear();
+                        editor.apply();
+
                         FacebookSdk.sdkInitialize(getApplicationContext());
                         LoginManager.getInstance().logOut();
+
+
                         finish();
 
                 }
@@ -96,7 +103,7 @@ public class MainActivity extends AppCompatActivity implements MainFragment.Main
         });
         View header = navigationView.getHeaderView(0);
         TextView tv_email = (TextView)header.findViewById(R.id.tv_email);
-        tv_email.setText("sree.kothamasu@gmail.com");
+        tv_email.setText("Welcome..!");
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer);
 
         ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.drawer_open,R.string.drawer_close){
@@ -185,6 +192,7 @@ public class MainActivity extends AppCompatActivity implements MainFragment.Main
 
         NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         manager.notify(0, builder.build());
+        Toast.makeText(this,"Notification created.. Check",Toast.LENGTH_SHORT).show();
     }
 
     @Override

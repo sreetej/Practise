@@ -16,8 +16,7 @@
         app:radius="5dp"
         app:slideInterval="3000"
         app:strokeColor="#FF777777"
-        app:strokeWidth="1dp"
-        />
+        app:strokeWidth="1dp"/>
 
     <View
         android:layout_width="match_parent"
@@ -44,7 +43,6 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
-
                     android:background="@color/White"
                     android:orientation="vertical"
                     android:padding="10dp">
@@ -55,12 +53,14 @@
                         android:layout_height="wrap_content"
                         android:text="AMAZON"
                         android:textColor="@color/Orange"
-                        android:textSize="12sp" />
+                        android:textSize="14sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
+
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
                         android:text="Upto 50% Off on Pressure Coocker on Amazon + Extra 7.5% Extra CashBack"
                         android:textColor="@color/Black"
                         android:textSize="12sp" />
@@ -76,7 +76,7 @@
                         android:gravity="center"
                         android:text="GET OFFER"
                         android:textColor="@color/White"
-                        android:textSize="11sp" />
+                        android:textSize="11sp" android:layout_marginBottom="20dp"/>
 
 
                 </LinearLayout>
@@ -95,12 +95,13 @@
                         android:layout_height="wrap_content"
                         android:text="SNAPDEAL"
                         android:textColor="@color/Orange"
-                        android:textSize="12sp" />
+                        android:textSize="14sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
                         android:text="Upto 50% Off on Pressure Coocker on SnapDeal + Extra 7.5% Extra CashBack"
                         android:textColor="@color/Black"
                         android:textSize="12sp" />
@@ -116,6 +117,7 @@
                         android:gravity="center"
                         android:text="GET OFFER"
                         android:textColor="@color/White"
+                        android:layout_marginBottom="20dp"
                         android:textSize="11sp" />
 
 
@@ -145,12 +147,13 @@
                         android:layout_height="wrap_content"
                         android:text="FLIPKART"
                         android:textColor="@color/Orange"
-                        android:textSize="12sp" />
+                        android:textSize="14sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
                         android:text="Upto 50% Off on Pressure Coocker on FlipKart + Extra 7.5% Extra CashBack"
                         android:textColor="@color/Black"
                         android:textSize="12sp" />
@@ -164,6 +167,7 @@
                         android:background="@color/Orange"
                         android:clickable="false"
                         android:gravity="center"
+                        android:layout_marginBottom="20dp"
                         android:text="GET OFFER"
                         android:textColor="@color/White"
                         android:textSize="11sp" />
@@ -185,14 +189,16 @@
                         android:layout_height="wrap_content"
                         android:text="MYNTRA"
                         android:textColor="@color/Orange"
-                        android:textSize="12sp" />
+                        android:textSize="14sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
                         android:text="Upto 50% Off on Pressure Coocker on Myntra + Extra 7.5% Extra CashBack"
                         android:textColor="@color/Black"
+
                         android:textSize="12sp" />
 
                     <Button
@@ -205,6 +211,7 @@
                         android:clickable="false"
                         android:gravity="center"
                         android:text="GET OFFER"
+                        android:layout_marginBottom="20dp"
                         android:textColor="@color/White"
                         android:textSize="11sp" />
 

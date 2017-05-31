@@ -3,23 +3,16 @@ package com.example.sreetej.cashkarosample;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.View;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
 import com.facebook.FacebookSdk;
-import com.facebook.Profile;
-import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
-
-import java.util.concurrent.Callable;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -50,6 +43,7 @@ public class LoginActivity extends AppCompatActivity {
         if (sharedpreferences.getString(USERID, null) != null) {
             loginSuccess();
         } else {
+
 
             mFacebookSignInButton.registerCallback(mFacebookCallbackManager,
                     new FacebookCallback<LoginResult>() {
@@ -82,7 +76,9 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void loginSuccess() {
-        startActivity(new Intent(LoginActivity.this, MainActivity.class).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK));
+        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
     }
 
 

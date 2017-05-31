@@ -1,11 +1,9 @@
 package com.example.sreetej.cashkarosample;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.Window;
-import android.view.WindowManager;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -21,8 +19,8 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-//                Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
-                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
+//                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
 
