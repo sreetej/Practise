@@ -4,6 +4,7 @@ using Android.Content;
 using Android.Telephony;
 using PhonewordXamarin.Droid;
 using Xamarin.Forms;
+using Uri = Android.Net.Uri;
 
 [assembly: Dependency(typeof(PhoneDailer))]
 namespace PhonewordXamarin.Droid
